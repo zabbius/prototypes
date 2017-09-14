@@ -1,0 +1,78 @@
+{
+    "Settings":
+    {
+        "SmartHome":
+        {
+            "http_threads_number": 1,
+            "http_port": 8881,
+
+            "ArduinoController":
+            {
+                "port": "/dev/ttyUSB0",
+                "speed": 19200,
+                "timeout": 0.2,
+                "Init":
+                [
+                    { "cmd": "ping", "args": { } }
+                ],
+                "Deinit":
+                [
+                ],
+
+                "Switches":
+                {
+                    "relay":  { "pin": "!4", "invert": true, "initial": false },
+                    "light1": { "pin": "!7", "invert": true, "initial": false },
+                    "light2": { "pin": "!8", "invert": true, "initial": false }
+                }
+            },
+            "SwitchController":
+            {
+            },
+            "EventManager":
+            {
+                "database": "smarthome.db",
+                "clean_interval": 60.0,
+                "event_store_days": 30.0,
+                "handle_interval": 1.0,
+                "handle_retry_count": 3
+            },
+        }
+    },
+
+    "Logging":
+    {
+        "root":
+        {
+            "handlers": ["common", "console"],
+            "level": 0
+        },
+
+        "handlers":
+        {
+            "console": 
+            {
+                "class": "logging.StreamHandler",
+                "formatter": "common"
+            },
+            "common":
+            {
+                "class": "logging.handlers.RotatingFileHandler",
+                "formatter": "common",
+                "filename": "trace.log",
+                "mode": "w",
+                "maxBytes": 10485760,
+                "backupCount": 5
+            }
+        },
+
+        "formatters":
+        {
+            "common":
+            {
+                "format": "%(asctime)s: %(threadName)s - %(name)s - %(levelname)s - %(message)s",
+                "class": "logging.Formatter"
+            }
+        }
+    }
+}

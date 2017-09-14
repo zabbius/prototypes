@@ -1,0 +1,116 @@
+#!/bin/sh
+
+VERBOSITY=1
+IFACE="$1"
+
+
+### includes
+
+. /usr/lib/huawei-ncm/error.sh
+. /usr/lib/huawei-ncm/find-modem.sh
+. /usr/lib/huawei-ncm/modem.sh
+
+
+### find and init modem
+
+find_modem
+init_modem "$PCUI"
+
+
+### product information
+
+modem I . |
+while read i; do
+
+    case "$i" in
+        Manufacturer:*)
+            echo -n "vendor ";;
+        Model:*)
+            echo -n "model ";;
+        Revision:*)
+            echo -n "firmware ";;
+        IMEI:*)
+            echo -n "imei ";;
+        *) continue;;
+    esac
+
+    echo "$i" | sed 's/^[^:]*: //'
+
+done
+
+
+### network
+
+m="$(modem '+COPS?')" || exit $?
+echo -n "provider "
+echo "$m" | cut -d, -f3 | sed 's/"//g'
+
+
+### mode
+
+m="$(modem '^SYSCFG?')" || exit $?
+echo -n "mode "
+
+case "$(echo "$m" | cut -d, -f1,2)" in
+    2,0) echo "Auto";;
+    2,1) echo "GSM, WCDMA";;
+    2,2) echo "WCDMA, GSM";;
+    13,*) echo "GSM";;
+    14,*) echo "WCDMA";;
+    *) echo "Unknown";;
+esac
+
+
+### data bandwidth
+
+m="$(modem '+CGEQNEG=1')" || exit $?
+printf "uplink %s kbps\n" "$(echo "$m" | cut -d, -f3)"
+printf "downlink %s kbps\n" "$(echo "$m" | cut -d, -f4)"
+
+
+### frequency lock
+
+m="$(modem '^FREQLOCK?')" || exit $?
+echo -n "freqlock "
+echo "$m" | cut -d, -f2
+
+
+### cell
+
+modem '+CREG=2'
+m="$(modem '+CREG?')" || exit $?
+i="$(echo "$m" | cut -d, -f3 | sed 's/"//g')"
+[ -n "$i" ] && printf "lac 0x%x (%d)\n" $((0x$i)) $((0x$i))
+i="$(echo "$m" | cut -d, -f4 | sed 's/"//g')"
+[ -n "$i" ] && printf "ci 0x%x (%d)\n" $((0x$i)) $((0x$i))
+
+
+### cell info
+
+if m="$(modem '^CELLINFO=0' '^[0-9]\+,[0-9]\+,-[0-9]\+,-[0-9]\+$')"; then
+    echo -n "freq "
+    echo "$m" | cut -d, -f1
+fi
+
+
+### network technology
+
+#m="$(modem '^SYSINFOEX')" || exit $?
+#printf "network %s / %s\n" \
+#    "$(echo "$m" | cut -d, -f7 | sed 's/"//g')" \
+#    "$(echo "$m" | cut -d, -f9 | sed 's/"//g')"
+
+
+### reception: csq / rssi
+
+m="$(modem '+CSQ')" || exit $?
+i="$(echo "$m" | cut -d, -f1)"
+[ -n "$i" ] && printf "signal %d%% (%d / 31)\n" $((($i * 100 + 16) / 31)) $i
+[ -n "$i" ] && printf "rssi %d dBm\n" $(($i * 2 - 113))
+
+
+### reception: rcsp / ecio
+
+m="$(modem '^CSNR?')" || exit $?
+printf "rcsp %d dBm\n" "$(echo "$m" | cut -d, -f1)"
+printf "ecio %d dBm\n" "$(echo "$m" | cut -d, -f2)"

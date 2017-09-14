@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dex=$1
+shift
+
+sudo LD_LIBRARY_PATH=/vendor/lib:/system/lib CLASSPATH="$dex" app_process /system/bin $*
+
+

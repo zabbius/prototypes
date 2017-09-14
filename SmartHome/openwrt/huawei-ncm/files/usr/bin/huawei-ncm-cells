@@ -1,0 +1,33 @@
+#!/bin/sh
+
+VERBOSITY=1
+IFACE="$1"
+
+
+### includes
+
+. /usr/lib/huawei-ncm/error.sh
+. /usr/lib/huawei-ncm/find-modem.sh
+. /usr/lib/huawei-ncm/modem.sh
+
+
+### find and init modem
+
+find_modem
+MODEM="$PCUI"
+init_modem
+
+m=$(modem '^CELLINFO=?') || exit $?
+
+for i in $(echo "$m" | sed -e 's/[()]//g' -e 's/,/\n/g'); do
+
+        n="$(modem "^CELLINFO=$i" '^[0-9]\+,[0-9]\+,-[0-9]\+,-[0-9]\+$')" || exit $?
+
+        [ -n "$n" ] || continue
+
+        printf '%s [%d dBm / %d dBm]\n' \
+                "$(echo "$n" | cut -d, -f1)" \
+                "$(echo "$n" | cut -d, -f3)" \
+                "$(echo "$n" | cut -d, -f4)"
+
+done

@@ -1,0 +1,370 @@
+#!/bin/sh
+
+
+### error handling and logging
+
+. /usr/lib/huawei-ncm/error.sh
+
+
+### interrupt handlers
+
+int=
+run=1
+renew=
+connection=0
+
+sleep=
+
+wsleep () {
+    sleep "$@" & sleep=$!
+    wait $sleep; sleep=
+    [ -n "$run" ]
+}
+
+trap 'run=; [ -n "$sleep" ] && kill $sleep; vecho 2 "interrupt!"' TERM
+trap 'renew=1; [ -n "$sleep" ] && kill $sleep; vecho 2 "renew!"' HUP
+trap 'kill -TERM $$; int=1' INT
+trap '[ -n "$PID" ] && rm -f "$PID"' EXIT
+
+
+### check arguments
+
+PID=
+PIN=
+MODE=
+FREQ=
+SCRIPT=/lib/netifd/dhcp.script
+TIMEOUT=15
+INTERVAL=60
+VERBOSITY=1
+
+usage () {
+
+    if [ $VERBOSITY -ge 1 ]; then
+            echo "Usage: $0 [ options ] <interface> <apn>" >&2
+        echo "Options:" >&2
+        echo "    -p <pidfile>    save PID in <pidfile>" >&2
+        echo "    -m <mode>    set modem to network <mode>" >&2
+        echo "    -f <freq>    lock frequency to <freq>" >&2
+        echo "    -n <pin>    pin code of the card" >&2
+        echo "    -s <script>    use <script> as DHCP script" >&2
+        echo "    -t <timeout>    time to wait for network and data connection" >&2
+        echo "    -i <interval>    connection checking interval" >&2
+    fi
+
+        exit 2
+}
+
+while getopts ":p:m:f:n:s:t:i:qvh" i; do
+    case $i in
+        p) PID="$OPTARG";;
+        m) MODE="$OPTARG";;
+        f) FREQ="$OPTARG";;
+        n) PIN="$OPTARG";;
+        s) SCRIPT="$OPTARG";;
+        t) TIMEOUT="$OPTARG";;
+        i) INTERVAL="$OPTARG";;
+        q) VERBOSITY=$((VERBOSITY-1));;
+        v) VERBOSITY=$((VERBOSITY+1));;
+        h) usage;;
+        ?) vecho 1 "Invalid option: -$OPTARG"; usage;;
+        :) vecho 1 "Option -$OPTARG needs an argument"; usage;;
+    esac
+done
+
+shift $(($OPTIND-1))
+
+if [ $# -ne 2 ]; then
+    vecho 1 "Expecting two arguments"
+    usage
+fi
+
+IFACE="$1"
+APN="$2"
+
+
+### save pid
+
+if [ -n "$PID" ]; then
+    echo $$ > "$PID"
+fi
+
+
+### include modem functions
+
+. /usr/lib/huawei-ncm/find-modem.sh
+. /usr/lib/huawei-ncm/modem.sh
+
+
+### check pin state
+
+check_pin () {
+
+    vecho 2 -n "Checking PIN... "
+
+    m="$(modem '^CPIN?')" || exit $?
+    pin="$(echo "$m" | cut -d, -f1)"
+    times="$(echo "$m" | cut -d, -f2)"
+
+    case "$pin" in
+
+        READY)
+            vecho 2 "ok!"
+        ;;
+
+        SIM\ PIN)
+
+            ### don't try to unlock in face of failed tries
+            if [ "$times" != 3 ]; then
+                vecho 1 "SIM card locked with non-virgin 'times' record; won't try to unlock"
+                exit 1
+            fi
+
+            ### check if PIN was given
+            if [ -z "$PIN" ]; then
+                vecho 1 "SIM card locked but no PIN specified"
+                exit 1
+            fi
+
+
+            ### try to unlock
+
+            modem "^CPIN=\"$PIN\"" || exit $?
+
+        ;;
+
+        *)
+            vecho 1 "SIM card locked with $pin code ($m)"
+            exit 1
+        ;;
+    esac
+}
+
+### set mode if requested
+
+set_mode () {
+
+    [ -z "$MODE" ] && return
+
+    vecho 2 -n "Setting mode... "
+
+    ### default: no change
+    mode=16,3
+
+    ### calculate mode
+
+    case "$MODE" in
+        gsm) mode=13,0 ;;
+        wcdma) mode=14,0 ;;
+        gsmfirst) mode=2,1 ;;
+        wcdmafirst) mode=2,2 ;;
+        auto) mode=2,0 ;;
+    esac
+
+    ### set mode
+    modem "^SYSCFG=$mode,3fffffff,2,4" || exit $?
+    #modem "^SYSCFGEX=\"0201\",3fffffff,2,4,7fffffffffffffff,," || exit $?
+
+    vecho 2 "ok!"
+}
+
+
+### lock to frequency if requested
+
+lock_frequency () {
+
+    [ -n "$FREQ" ] || return 0
+
+        vecho 2 -n "Locking frequency... "
+
+    if [ "$FREQ" = "0" ]; then
+        modem "^FREQLOCK=0" || exit $?
+    else
+        modem "^FREQLOCK=1,$FREQ" || exit $?
+    fi
+
+    vecho 2 "ok!"
+    return 0
+
+}
+
+
+### wait for network registration
+
+register () {
+
+    vecho 2 -n "Waiting for network... "
+
+    for i in $(seq "$TIMEOUT"); do
+        stat="$(modem '+CREG?' | cut -d, -f2)" || exit $?
+        [ "$stat" == 1 ] && break
+        wsleep 1 || return 1
+        vecho 2 -en "\b. "
+    done
+
+    if [ "$stat" != 1 ]; then
+        vecho 2 "timeout" || vecho 1 "timeout while waiting for network"
+        return 1
+    fi
+
+    vecho 2 "ok!"
+    return 0
+}
+
+
+### check +CGPADDR response
+is_connected () {
+    [ -n "$1" -a "$1" != '"0.0.0.0"' ]
+}
+
+
+### establish data connection
+
+connect () {
+
+    vecho 2 -n "Establishing data connection... "
+
+   # echo -en "AT^NDISDUP=1,1,\"$APN\"\r\n" > "$WDM"
+    modem "^NDISDUP=1,1,\"$APN\"" || exit $?
+    connection=1
+
+    for i in $(seq "$TIMEOUT"); do
+        ip="$(modem '+CGPADDR=1' | cut -d, -f2)" || exit $?
+        is_connected "$ip" && break
+        wsleep 1 || return 1
+        vecho 2 -en "\b. "
+    done
+
+    if ! is_connected "$ip"; then
+        vecho 2 "timeout" || vecho 1 "timeout waiting for data connection"
+        return 1
+    fi
+
+    vecho 2 "ok"
+    return 0
+
+}
+
+
+### request address
+
+dhcp () {
+
+    vecho 2 -n "Running udhcpc... "
+
+    ifconfig "$IFACE" up &&
+    udhcpc -i "$IFACE" -s "$SCRIPT" -f -t 0 -q
+
+    [ -n "$run" ] || return 1
+
+    if [ $? -gt 0 ]; then
+        vecho 1 "failed to get ip address"
+        return 1
+    fi
+
+    connection=2
+    vecho 2 "ok"
+    return 0
+
+}
+
+### take a break
+
+nap () {
+
+    ### sleep...
+
+    vecho 3 -n "Taking a nap... "
+
+    wsleep "$INTERVAL" || return 1
+    [ -z "$renew" ] || return 1
+
+    vecho 3 "wake up"
+    return 0
+
+}
+
+
+### check connection
+check () {
+
+    [ $connection -ne 2 ] && return 1
+
+    vecho 3 -n "Checking connection... "
+
+    ip="$(modem '+CGPADDR=1' | cut -d, -f2)" || exit $?
+
+    if ! is_connected "$ip"; then
+        connection=0
+        vecho 2 "lost connection"
+        return 1
+    fi
+
+    vecho 3 "ok!"
+    return 0
+
+}
+
+### disconnect
+
+disconnect () {
+
+    [ $connection -ge 1 ] || return
+
+    vecho 2 -n "Disconnecting... "
+
+    #echo -en "AT^NDISDUP=1,0\r\n" > "$WDM"
+    modem "^NDISDUP=1,0" || exit $?
+
+    for i in $(seq "$TIMEOUT"); do
+        ip="$(modem '+CGPADDR=1' | cut -d, -f2)" || exit $?
+        [ -z "$ip" ] && break
+        wsleep 1
+        vecho 2 -en "\b. "
+    done
+
+    if [ -n "$ip" ]; then
+        vecho 2 "timeout" || vecho 1 "timeout waiting for disconnection"
+        return 1
+    fi
+
+    vecho 1 "disconnected"
+    connection=0
+    return 0
+
+}
+
+
+### connection loop
+
+while [ -n "$run" ]; do
+
+    if ! find_modem_hard; then
+        vecho 1 "Couldn't find modem; sleeping 10 minutes"
+        wsleep 600
+        continue
+    fi
+
+    init_modem
+
+    check_pin
+    set_mode
+    lock_frequency
+
+    register &&
+    connect &&
+    dhcp
+
+    renew=
+    while [ -n "$run" ]; do
+        nap && check || break
+    done
+
+    check_interfaces &&
+    disconnect
+
+done
+
+if [ -n "$int" ]; then
+    kill -INT -$$
+fi

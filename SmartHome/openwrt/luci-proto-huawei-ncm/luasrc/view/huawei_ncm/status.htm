@@ -1,0 +1,171 @@
+<%#
+LuCI - Lua Configuration Interface
+-%>
+
+<%
+    require "luci.sys"
+
+    local rv = {
+        gotinfo        = "0",
+        interface    = "",
+        vendor        = "",
+        model        = "",
+        notification    = "",
+        firmware    = "",
+        imei        = "",
+        provider    = "",
+        mode        = "",
+        downlink    = "",
+        uplink        = "",
+        freqlock    = "",
+        lac        = "",
+        ci        = "",
+        freq        = "",
+        network        = "",
+        signal        = "",
+        rssi        = "",
+        rcsp        = "",
+        ecio        = ""
+    }
+
+    if ( luci.http.formvalue("status") == "1" ) then
+
+        local modeminfo = luci.sys.exec("/usr/bin/huawei-ncm-info", "")
+
+        for k, v in string.gmatch(modeminfo, "(%w+) ([^\n]+)\n") do
+            rv[k] = v
+        end
+
+        rv["gotinfo"] = "1"
+
+        luci.http.prepare_content("application/json")
+        luci.http.write_json(rv)
+
+        return
+
+    end
+
+-%>
+
+<%+header%>
+
+<script type="text/javascript" src="<%=resource%>/cbi.js"></script>
+<script type="text/javascript" src="<%=resource%>/huawei_ncm_xhr.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+    function capitalize(s)
+    {
+        return s.toLowerCase().replace( /\b./g, function(a){ return a.toUpperCase(); } );
+    };
+
+    XHR2.poll(5, '<%=REQUEST_URI%>', { status: 1 },
+        function(x, info)
+        {
+
+            var e;
+
+            if (e = document.getElementById('notification'))
+                e.innerHTML = info.notification;
+
+            if (info.gotinfo == "1") {
+
+                if (e = document.getElementById('name'))
+                    e.innerHTML = capitalize(info.vendor) + " " + capitalize(info.model);
+
+                if (e = document.getElementById('firmware'))
+                    e.innerHTML = info.firmware;
+
+                if (e = document.getElementById('imei'))
+                    e.innerHTML = info.imei;
+
+                if (e = document.getElementById('provider'))
+                    e.innerHTML = info.provider;
+
+                if (e = document.getElementById('linkspeed'))
+                    if ( info.downlink != "" && info.uplink != "" )
+                        e.innerHTML = info.downlink + " / " + info.uplink ;
+
+                if (e = document.getElementById('freqlock'))
+                                        e.innerHTML = info.freqlock;
+
+                if (e = document.getElementById('mode'))
+                    e.innerHTML = info.mode;
+
+                if (e = document.getElementById('ci'))
+                    e.innerHTML = info.ci;
+
+                if (e = document.getElementById('lac'))
+                    e.innerHTML = info.lac;
+
+                if (e = document.getElementById('freq'))
+                                        e.innerHTML = info.freq;
+
+                if (e = document.getElementById('network'))
+                    e.innerHTML = info.network;
+
+                if (e = document.getElementById('signal'))
+                    e.innerHTML = info.signal;
+
+                if (e = document.getElementById('rssi'))
+                    e.innerHTML = info.rssi;
+
+                if (e = document.getElementById('rcsp'))
+                    e.innerHTML = info.rcsp;
+
+                if (e = document.getElementById('ecio'))
+                    e.innerHTML = info.ecio;
+
+            }
+
+            modemdevD = info.modemdev;
+            gotinfoD = info.gotinfo;
+        }
+    );
+
+//]]></script>
+
+<h2><a id="content" name="content"><%:Huawei NCM Status%></a></h2>
+<small style="color: #777;" id="notification"></small>
+
+<fieldset class="cbi-section">
+    <legend id="name"><%:Detecting dongle%></legend>
+
+    <table width="100%" cellspacing="10">
+        <tr><td width="33%"><%:Firmware version%></td><td id="firmware"></td></tr>
+        <tr><td width="33%"><%:IMEI%></td><td id="imei"></td></tr>
+    </table>
+</fieldset>
+
+<fieldset class="cbi-section">
+<legend><%:Network%></legend>
+
+    <table width="100%" cellspacing="10">
+        <tr><td width="33%"><%:Provider%></td><td id="provider"></td></tr>
+        <tr><td width="33%"><%:Downlink/Uplink%></td><td id="linkspeed"></td></tr>
+        <tr><td width="33%"><%:Mode%></td><td id="mode"></td></tr>
+        <tr><td width="33%"><%:Freq lock%></td><td id="freqlock"></td></tr>
+    </table>
+</fieldset>
+
+<fieldset class="cbi-section">
+    <legend><%:Cell%></legend>
+
+    <table width="100%" cellspacing="10">
+        <tr><td width="33%"><%:Location Area Code%></td><td id="lac"></td></tr>
+        <tr><td width="33%"><%:Cell ID%></td><td id="ci"></td></tr>
+        <tr><td width="33%"><%:Cell Freq%></td><td id="freq"></td></tr>
+    </table>
+</fieldset>
+
+<fieldset class="cbi-section">
+    <legend><%:Signal level%></legend>
+
+    <table width="100%" cellspacing="10">
+        <tr><td width="33%"><%:Network%></td><td id="network"></td></tr>
+        <tr><td width="33%"><%:Signal strength%></td><td id="signal"></td></tr>
+        <tr><td width="33%"><%:RSSI%></td><td id="rssi"></td></tr>
+        <tr><td width="33%"><%:RCSP%></td><td id="rcsp"></td></tr>
+        <tr><td width="33%"><%:ECIO%></td><td id="ecio"></td></tr>
+    </table>
+</fieldset>
+<%+footer%>

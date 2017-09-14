@@ -1,0 +1,68 @@
+{
+    "Settings":
+    {
+        "SmartHome":
+        {
+            "http_threads_number": 1,
+            "http_port": 8881,
+
+            "ArduinoController":
+            {
+                "port": "/dev/arduino",
+                "speed": 19200,
+                "timeout": 0.2,
+                "Init":
+                [
+                    { "cmd": "ping", "args": { } }
+                ],
+                "Deinit":
+                [
+                ],
+
+                "Switches":
+                {
+                    "light":  { "pin": "!4", "invert": true, "initial": false }
+                }
+            },
+            "SwitchController":
+            {
+            }
+        }
+    },
+
+    "Logging":
+    {
+        "root":
+        {
+            "handlers": ["common"],
+            "level": 0
+        },
+
+        "handlers":
+        {
+            "console": 
+            {
+                "class": "logging.StreamHandler",
+                "formatter": "common"
+            },
+            "common":
+            {
+                "class": "logging.handlers.RotatingFileHandler",
+                "formatter": "common",
+                "filename": "./log/trace.log",
+                "mode": "w",
+                "maxBytes": 10485760,
+                "backupCount": 5
+            }
+        },
+
+        "formatters":
+        {
+            "common":
+            {
+                "format": "%(asctime)s: %(threadName)s - %(name)s - %(levelname)s - %(message)s",
+                "class": "logging.Formatter"
+            }
+        }
+    }
+}
