@@ -6,7 +6,7 @@ import json
 import logging
 import time
 
-from client_connector import ClientConnector
+from .client_connector import ClientConnector
 
 
 class SerialClientConnector(ClientConnector):

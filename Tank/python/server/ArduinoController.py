@@ -31,7 +31,7 @@ class ArduinoController:
                     self.logger.info("Sending initial request {0}".format(request))
                     self.connector.requestAndCheck(request['cmd'], request['args'])
                 break
-            except Exception, ex:
+            except Exception as ex:
                 self.logger.error("{0}: Exception caught: {1}\n{2}".format(self, ex, traceback.format_exc()))
                 time.sleep(1)
 

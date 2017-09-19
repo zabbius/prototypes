@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import threading
-from python_modules.threading_utils import DelegateCommand
+from ..threading_utils import DelegateCommand
 
 
 class BackgroundServerMixIn:

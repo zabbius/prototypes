@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from SocketServer import TCPServer
-from SocketServer import UDPServer
-from BaseHTTPServer import HTTPServer
+from ..cross_version.socket_server import TCPServer
+from ..cross_version.socket_server import UDPServer
+from ..cross_version.http_server import HTTPServer
 
-from mixins import DispatchedServerMixIn, BackgroundServerMixIn
+from .mixins import DispatchedServerMixIn, BackgroundServerMixIn
 
 
 __all__ = ['DispatchedTCPServer',

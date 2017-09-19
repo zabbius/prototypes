@@ -4,9 +4,9 @@ import logging
 import socket
 import alsaaudio
 import threading
-import Queue
 import traceback
 
+import six
 
 class UdpRecorder:
     def __init__(self):

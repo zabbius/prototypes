@@ -2,8 +2,10 @@
 
 import logging
 import json
-import urlparse
 import traceback
+
+import six
+from six.moves import urllib_parse as urlparse
 
 
 class CommandHandler:
@@ -22,7 +24,7 @@ class CommandHandler:
         split = urlparse.urlsplit(requestString)
         args = urlparse.parse_qs(split.query, True)
 
-        for key in args.iterkeys():
+        for key in six.iterkeys(args):
             args[key] = args[key][0]
 
         path = split.path.split("/")

@@ -1,5 +1,5 @@
 import logging
-
+import six
 
 class SwitchController:
     def __init__(self, config):
@@ -54,7 +54,7 @@ class SwitchController:
     def getStatus(self):
         switchStatus = {}
 
-        for name in self.switches.iterkeys():
+        for name in six.iterkeys(self.switches):
             switch = self.switches[name]
             switchStatus[name] = {'type': switch['type'], 'value': self.getSwitchValue(name)}
 

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import Queue
 import logging
 
-from thread_worker import ThreadWorker
+from six.moves import queue as Queue
+
+from .thread_worker import ThreadWorker
 
 
 class MultiThreadingDispatcher:

@@ -8,6 +8,7 @@ import os
 import sys
 import traceback
 
+import six
 
 class DummyUtil:
     def __init__(self, config):
@@ -67,7 +68,7 @@ class UtilLauncher:
 
             override = self.getConfigOverrideSection(config)
 
-            for (name, value) in args.iteritems():
+            for (name, value) in six.iteritems(args):
                 if value is not None:
                     override[name] = value
 

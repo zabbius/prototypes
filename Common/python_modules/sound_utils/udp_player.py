@@ -4,8 +4,9 @@ import logging
 import socket
 import alsaaudio
 import threading
-import Queue
 import traceback
+
+import six
 
 
 class UdpPlayer:
@@ -49,7 +50,7 @@ class UdpPlayer:
         self.pcm.setformat(self.sampleFormat)
         self.pcm.setperiodsize(self.periodSize)
 
-        self.queue = Queue.Queue()
+        self.queue = queue.Queue()
 
         self.stopThread = False
 
@@ -111,7 +112,7 @@ class UdpPlayer:
             try:
                 data = self.queue.get(True, 1)
                 self.pcm.write(data)
-            except Queue.Empty:
+            except queue.Empty:
                 pass
             except Exception as ex:
                 self.logger.warning("Exception caught in play thread: {0}\n{1}".format(ex, traceback.format_exc()))

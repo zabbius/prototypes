@@ -2,9 +2,10 @@
 
 import json
 import logging
-import httplib
 
-from client_connector import ClientConnector
+
+from ..cross_version import http_client
+from .client_connector import ClientConnector
 
 
 class HttpClientConnector(ClientConnector):

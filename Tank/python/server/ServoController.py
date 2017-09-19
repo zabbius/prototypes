@@ -2,7 +2,7 @@ import logging
 import os
 import subprocess
 import time
-
+import six
 
 class ServoController:
     def __init__(self, config):
@@ -30,7 +30,7 @@ class ServoController:
                         
         pins = []
         n = 0
-        for name in self.servos.iterkeys():
+        for name in six.iterkeys(self.servos):
             servo = self.servos[name]
             pins.append(str(servo['pin']))
             servo['index'] = n
@@ -52,7 +52,7 @@ class ServoController:
             
         
         self.logger.info("Setting initial values")
-        for name in self.servos.iterkeys():
+        for name in six.iterkeys(self.servos):
             servo = self.servos[name]
             self.setServoPosition(name, servo['value'])
         
@@ -77,7 +77,7 @@ class ServoController:
     def getStatus(self):
         servoStatus = {}
         
-        for name in self.servos.iterkeys():
+        for name in six.iterkeys(self.servos):
             servoStatus[name] = self.servos[name].copy()
         
         return servoStatus

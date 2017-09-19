@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import BaseHTTPServer
-import SocketServer
+from ..cross_version.http_server import *
+from ..cross_version.socket_server import *
 
 __all__ = ['CreateHttpRequestHandlerRedirectorClass',
            'CreateTcpRequestHandlerRedirectorClass',
@@ -11,7 +11,7 @@ defaultHttpMethods = ['GET', 'POST']
 
 
 def CreateHttpRequestHandlerRedirectorClass(handlerDelegate, methods = defaultHttpMethods):
-    class HttpRedirector(BaseHTTPServer.BaseHTTPRequestHandler):
+    class HttpRedirector(BaseHTTPRequestHandler):
         def __getattr__(self, item):
             if item in HttpRedirector.supportedMethods:
                 return self.doMethod
@@ -32,7 +32,7 @@ def CreateHttpRequestHandlerRedirectorClass(handlerDelegate, methods = defaultHt
 
 
 def CreateTcpRequestHandlerRedirectorClass(handlerDelegate):
-    class Redirector(SocketServer.StreamRequestHandler):
+    class Redirector(StreamRequestHandler):
         def handle(self):
             Redirector.handleRequest(self)
 
@@ -41,7 +41,7 @@ def CreateTcpRequestHandlerRedirectorClass(handlerDelegate):
 
 
 def CreateUdpRequestHandlerRedirectorClass(handlerDelegate):
-    class Redirector(SocketServer.DatagramRequestHandler):
+    class Redirector(DatagramRequestHandler):
         def handle(self):
             Redirector.handleRequest(self)
 

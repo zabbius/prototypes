@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import logging
-from command_handler import CommandHandler
-from python_modules.server_utils import CreateTcpRequestHandlerRedirectorClass
-from python_modules.server_utils import CreateUdpRequestHandlerRedirectorClass
+from .command_handler import CommandHandler
+from ..server_utils import CreateTcpRequestHandlerRedirectorClass
+from ..server_utils import CreateUdpRequestHandlerRedirectorClass
 
 MAX_REQUEST_LEN = 65536
 

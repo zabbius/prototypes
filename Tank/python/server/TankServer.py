@@ -11,7 +11,7 @@ from VideoController import *
 from SwitchController import *
 from python_modules.command_utils import HTTPCommandHandler
 from python_modules.command_utils import UDPCommandHandler
-from python_modules.common_utils import ServerLauncher
+from python_modules.common_utils import ServiceLauncher
 from python_modules.server_utils import DispatchedBackgroundHTTPServer
 from python_modules.server_utils import DispatchedBackgroundUDPServer
 from python_modules.threading_utils import MultiThreadingDispatcher
@@ -84,7 +84,7 @@ class TankServer:
 
         self.servoController.start()
         self.gpioController.start()
-        self.arduinoController.start()
+        #self.arduinoController.start()
 
         self.switchController.addAll(self.gpioController.getPinNames(), self.gpioController.setPinValue,
                                      self.gpioController.getPinValue, 'gpio')
@@ -94,19 +94,19 @@ class TankServer:
                                         'arduino')
         self.switchController.start()
 
-        self.videoController.start()
+        #self.videoController.start()
         self.soundController.start()
         self.logger.info("Started")
 
     def stop(self):
         self.logger.info("Stopping")
-        self.videoController.stop()
+        #self.videoController.stop()
         self.soundController.stop()
 
         self.switchController.stop()
         self.servoController.stop()
         self.gpioController.stop()
-        self.arduinoController.stop()
+        #self.arduinoController.stop()
 
         self.httpServer.stopServer()
         self.udpServer.stopServer()
@@ -118,13 +118,15 @@ class TankServer:
         return True
 
     def getStatus(self):
-        status = {'http_port': self.http_port, 'udp_port': self.udp_port,
-                  'ServoController': self.servoController.getStatus(),
-                  'GpioController': self.gpioController.getStatus(),
-                  'VideoController': self.videoController.getStatus(),
-                  'SoundController': self.soundController.getStatus(),
-                  'ArduinoController': self.arduinoController.getStatus(),
-                  'SwitchController': self.switchController.getStatus()}
+        status = {
+            'http_port': self.http_port, 'udp_port': self.udp_port,
+            'ServoController': self.servoController.getStatus(),
+            'GpioController': self.gpioController.getStatus(),
+            'VideoController': self.videoController.getStatus(),
+            'SoundController': self.soundController.getStatus(),
+#            'ArduinoController': self.arduinoController.getStatus(),
+#            'SwitchController': self.switchController.getStatus()
+                }
 
         return status
 
@@ -150,8 +152,8 @@ class TankServer:
 
 
 if __name__ == "__main__":
-    class Launcher(ServerLauncher):
-        def createServer(self, config):
+    class Launcher(ServiceLauncher):
+        def createService(self, config):
             return TankServer(config['TankServer'])
 
         def addArgumentsToParser(self, parser):

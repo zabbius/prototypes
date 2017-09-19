@@ -3,7 +3,7 @@
 import socket
 import logging
 
-from client_connector import ClientConnector
+from .client_connector import ClientConnector
 
 
 class UdpClientConnector(ClientConnector):

@@ -2,7 +2,7 @@ import logging
 import subprocess
 import re
 import time
-
+import six
 
 class VideoController:
     def __init__(self, config):
@@ -129,7 +129,7 @@ class VideoController:
     def getStatus(self):
         result = []
 
-        for (name, params) in self.captures.iteritems():
+        for (name, params) in six.iteritems(self.captures):
             (tinycamd, device, width, height, fps, port) = params
             result.append({'name': name, 'device': device, 'width': width, 'height': height, 'fps': fps, 'port': port})
 

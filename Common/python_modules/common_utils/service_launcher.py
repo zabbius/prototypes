@@ -4,7 +4,7 @@ import signal
 import time
 import traceback
 
-from python_modules.common_utils.util_launcher import UtilLauncher
+from ..common_utils.util_launcher import UtilLauncher
 
 
 class DummyService:

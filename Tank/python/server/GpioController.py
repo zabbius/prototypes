@@ -1,6 +1,7 @@
 import logging
 import os
 
+import six
 
 class GpioController:
     # BASEPATH = "/sys/class/gpio"
@@ -16,7 +17,7 @@ class GpioController:
             raise RuntimeError("Gpio controller already started")
 
         self.logger.info("Starting")
-        for (name, value) in self.pinConfig.iteritems():
+        for (name, value) in six.iteritems(self.pinConfig):
             self.addPin(name, value['pin'], value['dir'])
 
         self.logger.info("Started")
@@ -58,7 +59,7 @@ class GpioController:
     def getStatus(self):
         pinStatus = {}
 
-        for name in self.pins.iterkeys():
+        for name in six.iterkeys(self.pins):
             pinStatus[name] = self.pins[name].copy()
             pinStatus[name]['value'] = self.getPinValue(name)
 
@@ -79,7 +80,7 @@ class GpioController:
     def releaseAll(self):
         self.logger.info("Releasing all pins")
 
-        for pin in self.pins.itervalues():
+        for pin in six.itervalues(self.pins):
             self.unexportPin(pin)
 
         self.pins.clear()

@@ -2,9 +2,9 @@
 import copy
 import logging
 
-from python_modules.server_utils import CreateHttpRequestHandlerRedirectorClass
-from command_handler import CommandHandler
-
+from ..server_utils import CreateHttpRequestHandlerRedirectorClass
+from .command_handler import CommandHandler
+import six
 
 class HTTPCommandHandler(CommandHandler):
     def __init__(self, commandHandlerDelegate=None):
@@ -25,7 +25,7 @@ class HTTPCommandHandler(CommandHandler):
 
         args['_httpMethod'] = requestHandler.command
         args['_remoteAddr'] = requestHandler.client_address
-        args['_httpHeaders'] = copy.copy(requestHandler.headers.dict)
+        args['_httpHeaders'] = copy.copy(requestHandler.headers)
 
         if requestHandler.command == 'POST':
             args['_httpBody'] = requestHandler.rfile.read(int(requestHandler.headers.get('Content-Length')))
@@ -51,9 +51,9 @@ class HTTPCommandHandler(CommandHandler):
         requestHandler.send_header('Connection', 'keep-alive')
         requestHandler.send_header('Content-Length', len(response))
 
-        for (key, value) in headers.iteritems():
+        for (key, value) in six.iteritems(headers):
             requestHandler.send_header(key, value)
 
         requestHandler.end_headers()
 
-        requestHandler.wfile.write(response)
+        requestHandler.wfile.write(six.b(response))
