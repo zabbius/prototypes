@@ -5,7 +5,7 @@ import logging
 
 from ArduinoController import ArduinoController
 from EventManager import EventManager, EventCommandHandler
-from SwitchController import SwitchController, SwitchCommandHandler
+from SwitchManager import SwitchManager, SwitchCommandHandler
 from python_modules.command_utils import HTTPCommandHandler
 from python_modules.server_utils import DispatchedBackgroundHTTPServer
 from python_modules.threading_utils import MultiThreadingDispatcher
@@ -24,7 +24,7 @@ class SmartHome:
         self.httpHandler.setHandler('ping', self.pingHandler)
         self.httpHandler.setHandler('status', self.statusHandler)
 
-        self.switchController = SwitchController(config['SwitchController'])
+        self.switchController = SwitchManager(config['SwitchController'])
         self.switchCommandHandler = SwitchCommandHandler(self.switchController)
 
         self.httpHandler.setHandler('switch', self.switchCommandHandler.handleCommand)

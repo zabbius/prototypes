@@ -37,6 +37,38 @@
                 "handle_interval": 1.0,
                 "handle_retry_count": 3
             },
+
+            "ShellEventHandler":
+            {
+                "handlers":
+                [
+                    {
+                        "type": "POWER",
+                        "name": "PowerDown",
+                        "script": "./powerdown.sh"
+                    },
+                    {
+                        "type": "POWER",
+                        "name": "PowerUp",
+                        "script": "./powerup.sh"
+                    }
+                ]
+            },
+            "SensorManager":
+            {
+                "update_interval": 1.0
+            },
+            "ShellSensorProvider":
+            {
+                "sensors":
+                {
+                    "dummy_sensor":
+                    {
+                        "name": "Dummy sensor",
+                        "script": "uname"
+                    }
+                }
+            }
         }
     },
 

@@ -28,10 +28,13 @@ class EventManager:
         self.cleanTimer = SafeTimer(self.onCleanTimer, config['clean_interval'], 'event_clean_timer')
         self.handleTimer = SafeTimer(self.onHandleTimer, config['handle_interval'], 'event_handle_timer')
 
-        self.handlers = []
+        self.handlers = set()
 
     def addEventHandler(self, handler, type=None, name=None):
-        self.handlers.append((type, name, handler))
+        self.handlers.add((type, name, handler))
+
+    def delEventHandler(self, handler, type=None, name=None):
+        self.handlers.remove((type, name, handler))
 
     def executeQuery(self, *args, **kwargs):
         with self.dbLock:
@@ -42,19 +45,27 @@ class EventManager:
     def handleEvent(self, event):
         self.executeQuery("UPDATE event SET state = ?;", (EVENT_STATE_HANDLING,))
 
+        success = True
+
         for type, name, handler in self.handlers:
             if type and type != event['type']:
                 continue
             if name and name != event['name']:
                 continue
 
+            self.logger.debug("Handling event {0} with handler {1}".format(event, handler))
+
             try:
                 handler(event)
-                self.executeQuery("UPDATE event SET state = ?;", (EVENT_STATE_HANDLED,))
             except Exception as e:
                 self.logger.error("Exception caught while handling event {0}: {1}\n{2}"
                                   .format(event, e, traceback.format_exc()))
-                self.executeQuery("UPDATE event SET state = ?, retries = retries + 1;", (EVENT_STATE_ERROR,))
+                success = False
+
+        if success:
+            self.executeQuery("UPDATE event SET state = ?;", (EVENT_STATE_HANDLED,))
+        else:
+            self.executeQuery("UPDATE event SET state = ?, retries = retries + 1;", (EVENT_STATE_ERROR,))
 
     def onHandleTimer(self):
         self.logger.debug("Handling new events")
@@ -123,11 +134,13 @@ class EventManager:
         self.logger.debug("Connecting to {0}".format(self.dbPath))
         self.db = sqlite3.connect(self.dbPath, check_same_thread=False)
         self.db.row_factory = sqlite3.Row
-        self.cleanTimer.start(True)
+        self.handleTimer.start(False)
+        self.cleanTimer.start(False)
         self.logger.info("Started")
 
     def stop(self):
         self.logger.info("Stopping")
+        self.handleTimer.stop()
         self.cleanTimer.stop()
         self.db.close()
         self.logger.info("Stopped")

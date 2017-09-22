@@ -1,7 +1,469 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="" />
+    <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/jquery" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/jquery-mobile" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/action-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/action-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/alert-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/alert-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-l-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-l-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-r-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-r-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-d-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-l-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-l-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-r-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-r-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-l-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-l-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-r-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-r-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/arrow-u-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/audio-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/audio-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/back-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/back-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/bars-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/bars-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/bullets-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/bullets-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/calendar-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/calendar-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/camera-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/camera-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-d-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-d-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-l-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-l-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-r-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-r-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-u-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/carat-u-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/check-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/check-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/clock-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/clock-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/cloud-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/cloud-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/comment-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/comment-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/delete-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/delete-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/edit-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/edit-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/eye-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/eye-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/forbidden-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/forbidden-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/forward-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/forward-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/gear-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/gear-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/grid-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/grid-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/heart-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/heart-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/home-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/home-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/info-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/info-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/location-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/location-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/lock-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/lock-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/mail-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/mail-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/minus-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/minus-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/navigation-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/navigation-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/phone-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/phone-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/plus-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/plus-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/power-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/power-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/recycle-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/recycle-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/refresh-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/refresh-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/search-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/search-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/shop-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/shop-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/star-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/star-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/tag-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/tag-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/user-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/user-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/video-black.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-png/video-white.png" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellEventHandler.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSensorProvider.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SwitchManager.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/smarthome.iml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/main.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/main.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-2.1.4/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-2.1.4/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-3.1.1/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/action-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/action-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/alert-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/alert-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-l-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-l-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-r-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-r-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-d-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-l-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-l-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-r-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-r-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-l-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-l-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-r-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-r-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/arrow-u-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/audio-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/audio-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/back-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/back-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/bars-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/bars-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/bullets-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/bullets-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/calendar-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/calendar-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/camera-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/camera-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-d-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-d-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-l-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-l-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-r-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-r-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-u-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/carat-u-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/check-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/check-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/clock-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/clock-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/cloud-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/cloud-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/comment-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/comment-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/delete-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/delete-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/edit-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/edit-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/eye-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/eye-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/forbidden-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/forbidden-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/forward-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/forward-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/gear-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/gear-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/grid-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/grid-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/heart-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/heart-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/home-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/home-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/info-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/info-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/location-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/location-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/lock-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/lock-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/mail-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/mail-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/minus-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/minus-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/navigation-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/navigation-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/phone-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/phone-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/plus-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/plus-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/power-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/power-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/recycle-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/recycle-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/refresh-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/refresh-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/search-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/search-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/shop-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/shop-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/star-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/star-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/tag-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/tag-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/user-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/user-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/video-black.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/images/icons-svg/video-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile-1.4.5.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.map" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.external-png-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.external-png-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.icons-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.inline-png-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.inline-png-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.structure-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.theme-1.4.5.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SwitchController.py" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery-3.1.1/jquery-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/action-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/action-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/alert-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/alert-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-l-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-l-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-r-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-r-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-d-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-l-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-l-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-r-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-r-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-l-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-l-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-r-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-r-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/arrow-u-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/audio-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/audio-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/back-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/back-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/bars-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/bars-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/bullets-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/bullets-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/calendar-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/calendar-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/camera-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/camera-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-d-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-d-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-l-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-l-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-r-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-r-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-u-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/carat-u-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/check-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/check-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/clock-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/clock-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/cloud-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/cloud-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/comment-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/comment-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/delete-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/delete-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/edit-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/edit-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/eye-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/eye-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/forbidden-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/forbidden-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/forward-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/forward-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/gear-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/gear-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/grid-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/grid-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/heart-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/heart-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/home-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/home-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/info-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/info-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/location-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/location-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/lock-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/lock-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/mail-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/mail-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/minus-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/minus-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/navigation-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/navigation-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/phone-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/phone-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/plus-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/plus-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/power-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/power-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/recycle-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/recycle-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/refresh-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/refresh-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/search-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/search-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/shop-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/shop-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/star-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/star-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/tag-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/tag-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/user-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/user-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/video-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-png/video-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/action-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/action-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/alert-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/alert-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-l-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-l-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-r-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-r-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-d-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-l-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-l-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-r-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-r-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-l-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-l-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-r-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-r-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/arrow-u-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/audio-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/audio-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/back-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/back-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/bars-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/bars-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/bullets-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/bullets-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/calendar-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/calendar-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/camera-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/camera-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-d-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-d-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-l-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-l-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-r-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-r-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-u-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/carat-u-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/check-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/check-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/clock-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/clock-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/cloud-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/cloud-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/comment-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/comment-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/delete-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/delete-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/edit-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/edit-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/eye-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/eye-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/forbidden-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/forbidden-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/forward-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/forward-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/gear-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/gear-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/grid-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/grid-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/heart-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/heart-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/home-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/home-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/info-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/info-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/location-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/location-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/lock-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/lock-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/mail-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/mail-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/minus-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/minus-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/navigation-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/navigation-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/phone-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/phone-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/plus-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/plus-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/power-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/power-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/recycle-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/recycle-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/refresh-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/refresh-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/search-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/search-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/shop-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/shop-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/star-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/star-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/tag-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/tag-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/user-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/user-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/video-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/images/icons-svg/video-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.external-png-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.external-png-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.inline-png-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.inline-png-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/ThirdPart/web/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/smarthome.db" afterPath="$USER_HOME$/Git/prototypes/SmartHome/smarthome.db" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/vcs.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/EventManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/EventManager.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,13 +471,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/smarthome$main.coverage" NAME="main Coverage Results" MODIFIED="1505905018816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="EventManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="192">
+              <caret line="137" column="1" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -23,12 +488,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SwitchManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SwitchManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="config.conf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+            <state relative-caret-position="600">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SensorManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SensorManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShellEventHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShellEventHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShellSensorProvider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShellSensorProvider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,16 +555,17 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>date</find>
       <find>headers</find>
       <find>self.db.execute</find>
+      <find>date</find>
+      <find>handleTimer</find>
     </findStrings>
     <replaceStrings>
       <replace>self.executeQuery</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/python_modules" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Git/prototypes" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,12 +581,22 @@
         <option value="$PROJECT_DIR$/python_modules/common_utils/safe_timer.py" />
         <option value="$PROJECT_DIR$/python_modules/command_utils/http_command_handler.py" />
         <option value="$PROJECT_DIR$/SmartHome.py" />
-        <option value="$PROJECT_DIR$/EventManager.py" />
         <option value="$PROJECT_DIR$/TimedEventManager.py" />
         <option value="$PROJECT_DIR$/TimedEventCreator.py" />
+        <option value="$PROJECT_DIR$/SwitchManager.py" />
+        <option value="$PROJECT_DIR$/ShellEventHandler.py" />
+        <option value="$PROJECT_DIR$/EventManager.py" />
+        <option value="$PROJECT_DIR$/SensorManager.py" />
+        <option value="$PROJECT_DIR$/ShellSensorProvider.py" />
         <option value="$PROJECT_DIR$/config.conf" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="380" />
@@ -98,6 +620,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,11 +633,12 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SmartHome.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Git/prototypes" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -205,6 +729,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="smarthome" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SmartHome.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -225,14 +750,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1688" height="1024" extended-state="6" />
-    <editor active="true" />
+    <frame x="380" y="261" width="1688" height="1024" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17887668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -247,12 +771,41 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/python_modules" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,56 +814,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TimedEventCreator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartHome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_modules/common_utils/service_launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -318,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SwitchController.py">
+    <entry file="file://$PROJECT_DIR$/SwitchManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
@@ -558,20 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartHome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SwitchController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-1247972723/_sqlite3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2520">
@@ -593,28 +1082,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TimedEventCreator.py">
+    <entry file="file://$PROJECT_DIR$/TimedEventCreator.py" />
+    <entry file="file:///usr/lib/python2.7/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="416">
+          <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/sqlite3/dbapi2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/sqlite3/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartHome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SwitchManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EventManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="192">
+          <caret line="137" column="1" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SensorManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShellEventHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShellSensorProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        <state relative-caret-position="600">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -2,9 +2,9 @@
 import logging
 
 
-class SwitchController:
+class SwitchManager:
     def __init__(self, config):
-        self.logger = logging.getLogger("SwitchController")
+        self.logger = logging.getLogger("SwitchManager")
         self.switches = {}
 
     def addAll(self, names, setFunction, getFunction, type=None):
