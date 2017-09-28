@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSliderProvider.py" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SliderManager.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/dictionaries/zab.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/dictionaries/zab.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/misc.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/smarthome.iml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/smarthome.iml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellEventHandlerProvider.py" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellEventHandler.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/EventManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/EventManager.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSensorProvider.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSensorProvider.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SwitchManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SwitchManager.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,37 +17,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/smarthome$main.coverage" NAME="main Coverage Results" MODIFIED="1506617342208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/smarthome$main.coverage" NAME="main Coverage Results" MODIFIED="1506618951970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="EventManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
-                <marker date="1506617210210" expanded="true" signature="1246:1272" ph="UPDATE event... " />
-                <marker date="1506617210210" expanded="true" signature="1946:1972" ph="UPDATE event... " />
-                <marker date="1506617210210" expanded="true" signature="2045:2094" ph="UPDATE event... " />
-                <marker date="1506617210210" expanded="true" signature="2265:2310" ph="SELECT * FRO... event" />
-                <marker date="1506617210210" expanded="true" signature="2579:2630" ph="SELECT * FRO... event" />
-                <marker date="1506617210210" expanded="true" signature="2997:3029" ph="DELETE FROM " />
-                <marker date="1506617210210" expanded="true" signature="3231:3303" ph="INSERT INTO event... " />
-                <marker date="1506617210210" expanded="true" signature="3875:3911" ph="SELECT * FRO... event" />
-                <marker date="1506617210210" expanded="true" signature="3993:4020" ph="SELECT * FRO... event" />
+                <marker date="1506618630793" expanded="true" signature="1311:1337" ph="UPDATE event... " />
+                <marker date="1506618630793" expanded="true" signature="2011:2037" ph="UPDATE event... " />
+                <marker date="1506618630793" expanded="true" signature="2110:2159" ph="UPDATE event... " />
+                <marker date="1506618630793" expanded="true" signature="2330:2375" ph="SELECT * FRO... event" />
+                <marker date="1506618630793" expanded="true" signature="2644:2695" ph="SELECT * FRO... event" />
+                <marker date="1506618630793" expanded="true" signature="3062:3094" ph="DELETE FROM " />
+                <marker date="1506618630793" expanded="true" signature="3296:3368" ph="INSERT INTO event... " />
+                <marker date="1506618630793" expanded="true" signature="3940:3976" ph="SELECT * FRO... event" />
+                <marker date="1506618630793" expanded="true" signature="4058:4085" ph="SELECT * FRO... event" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SliderManager.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SliderManager.py">
+      <file leaf-file-name="ShellEventHandlerProvider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShellEventHandlerProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="585">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,28 +57,8 @@
       <file leaf-file-name="ShellSliderProvider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ShellSliderProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="425">
               <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmartHome.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartHome.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShellSwitchProvider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -94,19 +67,33 @@
       <file leaf-file-name="config.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="555">
+              <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArduinoController.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ArduinoController.py">
+      <file leaf-file-name="SmartHome.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SmartHome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="874">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding>
+                <element signature="e#44#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShellSensorProvider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShellSensorProvider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,7 +145,6 @@
         <option value="$PROJECT_DIR$/python_modules/command_utils/http_command_handler.py" />
         <option value="$PROJECT_DIR$/TimedEventManager.py" />
         <option value="$PROJECT_DIR$/TimedEventCreator.py" />
-        <option value="$PROJECT_DIR$/ShellEventHandler.py" />
         <option value="$PROJECT_DIR$/SwitchManager.py" />
         <option value="$PROJECT_DIR$/ShellSwitchProvider.py" />
         <option value="$PROJECT_DIR$/ShellSensorProvider.py" />
@@ -166,11 +152,13 @@
         <option value="$PROJECT_DIR$/SensorManager.py" />
         <option value="$PROJECT_DIR$/ArduinoController.py" />
         <option value="$PROJECT_DIR$/ShellSliderProvider.py" />
-        <option value="$PROJECT_DIR$/SmartHome.py" />
-        <option value="$PROJECT_DIR$/EventManager.py" />
         <option value="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py" />
-        <option value="$PROJECT_DIR$/config.conf" />
         <option value="$PROJECT_DIR$/SliderManager.py" />
+        <option value="$PROJECT_DIR$/ShellEventHandler.py" />
+        <option value="$PROJECT_DIR$/EventManager.py" />
+        <option value="$PROJECT_DIR$/config.conf" />
+        <option value="$PROJECT_DIR$/ShellEventHandlerProvider.py" />
+        <option value="$PROJECT_DIR$/SmartHome.py" />
       </list>
     </option>
   </component>
@@ -336,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506094114600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="smarthome: sliders and switches">
+      <created>1506617489279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506617489279</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,7 +393,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="smarthome: sensors, events and web" />
-    <option name="LAST_COMMIT_MESSAGE" value="smarthome: sensors, events and web" />
+    <MESSAGE value="smarthome: sliders and switches" />
+    <option name="LAST_COMMIT_MESSAGE" value="smarthome: sliders and switches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -630,35 +626,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ShellEventHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_modules/common_utils/service_launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShellSensorProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-            <marker date="1506611111110" expanded="true" signature="85:1037" ph="..." />
-            <marker date="1506611111110" expanded="true" signature="493:848" ph="..." />
-            <marker date="1506611111110" expanded="true" signature="870:943" ph="..." />
-            <marker date="1506611111110" expanded="true" signature="964:1037" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SwitchManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ArduinoController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -711,25 +675,6 @@
         <state relative-caret-position="274">
           <caret line="144" column="8" lean-forward="true" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
           <folding>
-            <marker date="1506090929798" expanded="true" signature="1246:1272" ph="UPDATE event... " />
-            <marker date="1506090929798" expanded="true" signature="1946:1972" ph="UPDATE event... " />
-            <marker date="1506090929798" expanded="true" signature="2045:2094" ph="UPDATE event... " />
-            <marker date="1506090929798" expanded="true" signature="2265:2310" ph="SELECT * FRO... event" />
-            <marker date="1506090929798" expanded="true" signature="2579:2630" ph="SELECT * FRO... event" />
-            <marker date="1506090929798" expanded="true" signature="2997:3029" ph="DELETE FROM " />
-            <marker date="1506090929798" expanded="true" signature="3231:3303" ph="INSERT INTO event... " />
-            <marker date="1506090929798" expanded="true" signature="3875:3911" ph="SELECT * FRO... event" />
-            <marker date="1506090929798" expanded="true" signature="3993:4020" ph="SELECT * FRO... event" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
             <marker date="1506617210210" expanded="true" signature="1246:1272" ph="UPDATE event... " />
             <marker date="1506617210210" expanded="true" signature="1946:1972" ph="UPDATE event... " />
             <marker date="1506617210210" expanded="true" signature="2045:2094" ph="UPDATE event... " />
@@ -743,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartHome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -759,27 +696,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.conf">
+    <entry file="file://$PROJECT_DIR$/SliderManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state relative-caret-position="404">
+          <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SwitchManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ShellSliderProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="425">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SliderManager.py">
+    <entry file="file://$PROJECT_DIR$/ShellSensorProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShellEventHandlerProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1506618630793" expanded="true" signature="1311:1337" ph="UPDATE event... " />
+            <marker date="1506618630793" expanded="true" signature="2011:2037" ph="UPDATE event... " />
+            <marker date="1506618630793" expanded="true" signature="2110:2159" ph="UPDATE event... " />
+            <marker date="1506618630793" expanded="true" signature="2330:2375" ph="SELECT * FRO... event" />
+            <marker date="1506618630793" expanded="true" signature="2644:2695" ph="SELECT * FRO... event" />
+            <marker date="1506618630793" expanded="true" signature="3062:3094" ph="DELETE FROM " />
+            <marker date="1506618630793" expanded="true" signature="3296:3368" ph="INSERT INTO event... " />
+            <marker date="1506618630793" expanded="true" signature="3940:3976" ph="SELECT * FRO... event" />
+            <marker date="1506618630793" expanded="true" signature="4058:4085" ph="SELECT * FRO... event" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartHome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

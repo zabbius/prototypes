@@ -36,6 +36,9 @@ class EventManager:
     def delEventHandler(self, handler, type=None, name=None):
         self.handlers.remove((type, name, handler))
 
+    def clearEventHandlers(self):
+        self.handlers.clear()
+
     def executeQuery(self, *args, **kwargs):
         with self.dbLock:
             result = self.db.execute(*args, **kwargs)
@@ -140,6 +143,7 @@ class EventManager:
 
     def stop(self):
         self.logger.info("Stopping")
+        self.clearEventHandlers()
         self.handleTimer.stop()
         self.cleanTimer.stop()
         if self.db:

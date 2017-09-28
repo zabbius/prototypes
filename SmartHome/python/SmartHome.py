@@ -6,6 +6,7 @@ import logging
 from ArduinoController import ArduinoController
 from EventManager import EventManager, EventCommandHandler
 from SensorManager import SensorManager, SensorCommandHandler
+from ShellEventHandlerProvider import ShellEventHandlerProvider
 from ShellSensorProvider import ShellSensorProvider
 from ShellSliderProvider import ShellSliderProvider
 from ShellSwitchProvider import ShellSwitchProvider
@@ -55,6 +56,7 @@ class SmartHome:
         self.eventManager = EventManager(config['EventManager'])
         self.eventCommandHandler = EventCommandHandler(self.eventManager)
 
+        self.shellEventHandlerProvider = ShellEventHandlerProvider(config['ShellEventHandlerProvider'])
         self.httpHandler.setHandler('event', self.eventCommandHandler.handleCommand)
 
     def start(self):
@@ -76,6 +78,8 @@ class SmartHome:
         self.switchManager.start()
         self.sliderManager.start()
         self.sensorManager.start()
+
+        self.shellEventHandlerProvider.registerEventHandlers(self.eventManager.addEventHandler)
 
         self.eventManager.start()
 
