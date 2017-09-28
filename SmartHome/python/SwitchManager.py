@@ -5,13 +5,10 @@ import logging
 class SwitchManager:
     def __init__(self, config):
         self.logger = logging.getLogger("SwitchManager")
+        self.config = config
         self.switches = {}
 
-    def addAll(self, names, setFunction, getFunction, type=None):
-        for name in names:
-            self.addSwitch(name, setFunction, getFunction, type)
-
-    def addSwitch(self, name, setFunction, getFunction, type=None):
+    def addSwitch(self, name, getFunction, setFunction, type=None):
         if name in self.switches:
             raise RuntimeError("Switch {0} already exists".format(name))
 
@@ -55,16 +52,15 @@ class SwitchManager:
     def getStatus(self):
         switchStatus = {}
 
-        for name in self.switches.iterkeys():
-            switch = self.switches[name]
+        for name, switch in self.switches.iteritems():
             switchStatus[name] = {'type': switch['type'], 'value': self.getSwitchValue(name)}
 
         return switchStatus
 
 
 class SwitchCommandHandler:
-    def __init__(self, switchController):
-        self.switchController = switchController
+    def __init__(self, switchManager):
+        self.switchManager = switchManager
 
     def handleCommand(self, cmd, args):
         if cmd != 'switch':
@@ -78,7 +74,7 @@ class SwitchCommandHandler:
 
             value = (value == '1' or value == 'true')
 
-            self.switchController.setSwitchValue(name, value)
+            self.switchManager.setSwitchValue(name, value)
 
             if args.get('_protocol', '') == 'udp':
                 return {'_noAnswer': True}
@@ -87,17 +83,17 @@ class SwitchCommandHandler:
 
         elif action == 'get':
             name = args.get('name')
-            value = self.switchController.getSwitchValue(name)
+            value = self.switchManager.getSwitchValue(name)
             return {'switchName': name, 'switchValue': value}
 
         elif action == 'status':
-            return {'switchStatus': self.switchController.getStatus()}
+            return {'switchStatus': self.switchManager.getStatus()}
 
         elif action == 'start':
-            self.switchController.start()
+            self.switchManager.start()
             return True
         elif action == 'stop':
-            self.switchController.stop()
+            self.switchManager.stop()
             return True
 
         else:

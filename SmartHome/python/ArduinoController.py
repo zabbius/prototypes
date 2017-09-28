@@ -45,18 +45,18 @@ class ArduinoController:
         self.logger.info("Initializing switches")
         for name, switch in self.switches.iteritems():
             self.connector.requestAndCheck('pin', { 'act': 'dmode', 'mode': 'output', 'pin': switch['pin'] })
-            self.setSwitch(name, switch['initial'])
+            self.setSwitchValue(name, switch['value'])
 
     def deinitSwitches(self):
-        self.logger.info("Deinitializing switches")
+        self.logger.info("Deinitialinitializing switches")
         for name, switch in self.switches.iteritems():
             self.connector.requestAndCheck('pin', { 'act': 'dmode', 'mode': 'input', 'pin': switch['pin'] })
 
-    def getSwitch(self, name):
+    def getSwitchValue(self, name):
         switch = self.switches[name]
         return switch['value']
 
-    def setSwitch(self, name, value):
+    def setSwitchValue(self, name, value):
         switch = self.switches[name]
         realValue = value
         if switch['invert']:
@@ -67,8 +67,9 @@ class ArduinoController:
         self.connector.requestAndCheck('pin', {'act': 'dwrite', 'value': realValue, 'pin': switch['pin']})
         switch['value'] = value
 
-    def getSwitches(self):
-        return self.switches
+    def registerSwitches(self, addSwitchFunction):
+        for name, switch in self.switches.iteritems():
+            addSwitchFunction(name, self.getSwitchValue, self.setSwitchValue, "arduino")
 
     def showMessage(self, message):
         self.connector.requestAndCheck('display', {'act': 'message', 'text': message})

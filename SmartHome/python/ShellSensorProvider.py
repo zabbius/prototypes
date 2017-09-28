@@ -4,47 +4,32 @@ import subprocess
 
 
 class ShellSensorProvider:
-    def __init__(self, sensorManager, config):
+    def __init__(self, config):
         self.logger = logging.getLogger("ShellSensorProvider")
         self.config = config
-
-        self.sensorManager = sensorManager
-
         self.sensors = self.config['sensors']
 
-    def getSensorValue(self, id, script):
-        process = subprocess.Popen(script, id, stdout=subprocess.PIPE)
+    def registerSensors(self, addSwitchFunction):
+        for name, sensor in self.sensors.iteritems():
+            addSwitchFunction(name, self.getSensorValue, sensor.get('interval', None), "shell")
+
+    def getSensorValue(self, name):
+        sensor = self.sensors[name]
+        command = sensor['command']
+
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
         out, err = process.communicate()
 
         if process.returncode != 0:
-            raise Exception("Sensor script {0} returned code {1}".format(script, process.returncode))
+            raise Exception("Sensor command {0} returned code {1}".format(command, process.returncode))
 
         return out
 
-
     def start(self):
         self.logger.info("Starting")
-        self.logger.debug("Registering sensors")
-
-        for id, sensor in self.sensors.iteritems:
-            script = sensor['script']
-            interval = sensor.get('interval', None)
-
-            def handler():
-                self.getSensorValue(id, script)
-
-            self.sensorManager.addSensor(id, sensor['name'], handler, interval)
-
         self.logger.info("Started")
 
     def stop(self):
         self.logger.info("Stopping")
-
-        self.logger.debug("Unregistering event handlers")
-        for id in self.sensors.iterkeys():
-            self.sensorManager.delSensor(id)
-
         self.logger.info("Stopped")
 
-    def getStatus(self):
-        return {}

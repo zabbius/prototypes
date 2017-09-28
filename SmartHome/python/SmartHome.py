@@ -5,6 +5,11 @@ import logging
 
 from ArduinoController import ArduinoController
 from EventManager import EventManager, EventCommandHandler
+from SensorManager import SensorManager, SensorCommandHandler
+from ShellSensorProvider import ShellSensorProvider
+from ShellSliderProvider import ShellSliderProvider
+from ShellSwitchProvider import ShellSwitchProvider
+from SliderManager import SliderManager, SliderCommandHandler
 from SwitchManager import SwitchManager, SwitchCommandHandler
 from python_modules.command_utils import HTTPCommandHandler
 from python_modules.server_utils import DispatchedBackgroundHTTPServer
@@ -24,10 +29,17 @@ class SmartHome:
         self.httpHandler.setHandler('ping', self.pingHandler)
         self.httpHandler.setHandler('status', self.statusHandler)
 
-        self.switchController = SwitchManager(config['SwitchController'])
-        self.switchCommandHandler = SwitchCommandHandler(self.switchController)
-
+        self.switchManager = SwitchManager(config['SwitchManager'])
+        self.switchCommandHandler = SwitchCommandHandler(self.switchManager)
         self.httpHandler.setHandler('switch', self.switchCommandHandler.handleCommand)
+
+        self.sliderManager = SliderManager(config['SliderManager'])
+        self.sliderCommandHandler = SliderCommandHandler(self.sliderManager)
+        self.httpHandler.setHandler('slider', self.sliderCommandHandler.handleCommand)
+
+        self.sensorManager = SensorManager(config['SensorManager'])
+        self.sensorCommandHandler = SensorCommandHandler(self.sensorManager)
+        self.httpHandler.setHandler('sensor', self.sensorCommandHandler.handleCommand)
 
         self.http_port = int(config['http_port'])
         self.httpServer = DispatchedBackgroundHTTPServer(('', self.http_port),
@@ -35,6 +47,10 @@ class SmartHome:
         self.httpServer.allow_reuse_address = True
 
         self.arduinoController = ArduinoController(config['ArduinoController'])
+
+        self.shellSensorProvider = ShellSensorProvider(config['ShellSensorProvider'])
+        self.shellSwitchProvider = ShellSwitchProvider(config['ShellSwitchProvider'])
+        self.shellSliderProvider = ShellSliderProvider(config['ShellSliderProvider'])
 
         self.eventManager = EventManager(config['EventManager'])
         self.eventCommandHandler = EventCommandHandler(self.eventManager)
@@ -47,11 +63,19 @@ class SmartHome:
         self.httpServer.startServer()
 
         self.arduinoController.start()
+        self.shellSensorProvider.start()
+        self.shellSwitchProvider.start()
+        self.shellSliderProvider.start()
 
-        self.switchController.addAll(self.arduinoController.getSwitches().keys(), self.arduinoController.setSwitch,
-                                     self.arduinoController.getSwitch, 'arduino')
+        self.arduinoController.registerSwitches(self.switchManager.addSwitch)
 
-        self.switchController.start()
+        self.shellSwitchProvider.registerSwitches(self.switchManager.addSwitch)
+        self.shellSliderProvider.registerSliders(self.sliderManager.addSlider)
+        self.shellSensorProvider.registerSensors(self.sensorManager.addSensor)
+
+        self.switchManager.start()
+        self.sliderManager.start()
+        self.sensorManager.start()
 
         self.eventManager.start()
 
@@ -59,17 +83,29 @@ class SmartHome:
 
     def stop(self):
         self.logger.info("Stopping")
-        self.eventManager.stop()
-
-        self.arduinoController.stop()
-
         self.httpServer.stopServer()
         self.httpDispatcher.stop()
+
+        self.eventManager.stop()
+
+        self.switchManager.stop()
+        self.sliderManager.stop()
+        self.sensorManager.stop()
+
+        self.arduinoController.stop()
+        self.shellSensorProvider.stop()
+        self.shellSwitchProvider.stop()
+        self.shellSliderProvider.stop()
+
         self.logger.info("Stopped")
 
     def getStatus(self):
         status = { 'http_port': self.http_port,
-                   'SwitchController': self.switchController.getStatus() }
+                   'SwitchManager': self.switchManager.getStatus(),
+                   'SliderManager': self.sliderManager.getStatus(),
+                   'SensorManager': self.sensorManager.getStatus(),
+                   'EventManager':  self.eventManager.getStatus(),
+                   }
         return status
 
     def statusHandler(self, cmd, args):

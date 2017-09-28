@@ -142,7 +142,10 @@ class EventManager:
         self.logger.info("Stopping")
         self.handleTimer.stop()
         self.cleanTimer.stop()
-        self.db.close()
+        if self.db:
+            self.db.close()
+            self.db = None
+
         self.logger.info("Stopped")
 
     def getStatus(self):
