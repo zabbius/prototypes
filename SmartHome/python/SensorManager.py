@@ -17,15 +17,20 @@ class SensorManager:
 
         self.sensors = {}
 
-    def addSensor(self, name, getFunction, interval=None, type=None):
+    def addSensor(self, name, getFunction, interval=None, type=None, info=None):
         if name in self.sensors:
             raise RuntimeError("Sensor {0} already exists".format(name))
 
         if interval is not None:
             interval = datetime.timedelta(seconds=interval)
 
-        self.sensors[name] = { 'get': getFunction, 'interval': interval, 'value': None,
-                               'last_update': None, 'type': type }
+        if not info:
+            info = {}
+
+        sensor = { 'get': getFunction, 'interval': interval, 'value': None,
+                   'last_update': None, 'type': type, 'info': info }
+
+        self.sensors[name] = sensor
 
     def delSensor(self, name):
         if name not in self.sensors:
@@ -84,8 +89,14 @@ class SensorManager:
         sensorStatus = {}
 
         for name, sensor in self.sensors.iteritems():
-            sensorStatus[name] = { 'value': sensor['value'],
-                                   'last_update': str(sensor['last_update'])}
+            sensorStatusItem = { 'value': sensor['value'],
+                                 'last_update': str(sensor['last_update'])}
+
+            for k, v in sensor['info'].iteritems():
+                if k not in sensorStatusItem:
+                    sensorStatusItem[k] = v
+
+            sensorStatus[name] = sensorStatusItem
 
         return sensorStatus
 

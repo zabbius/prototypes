@@ -59,10 +59,32 @@
             {
                 "sensors":
                 {
-                    "dummy_sensor":
+                    "hostname":
                     {
-                        "command": "uname -a"
+                        "command": "hostname",
+                        "value_type": "string"
+                    },
+
+                    "ifconfig":
+                    {
+                        "command": "ifconfig eth0",
+                        "value_type": "text"
+                    },
+
+                    "cpu_temp":
+                    {
+                        "command": "sensors -u | grep 'temp1_input' | sed 's/temp1_input://' | sed 's/ *//g' | sed 's/\\.000//'",
+                        "value_type": "int"
+                    },
+
+                    "cpu_load":
+                    {
+                        "command": "./cpu_load.sh",
+                        "value_type": "progress",
+                        "min": "0",
+                        "max": "100"
                     }
+
                 }
             },
             "SwitchManager":

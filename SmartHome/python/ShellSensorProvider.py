@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import copy
 import logging
 import subprocess
 
@@ -11,7 +12,10 @@ class ShellSensorProvider:
 
     def registerSensors(self, addSwitchFunction):
         for name, sensor in self.sensors.iteritems():
-            addSwitchFunction(name, self.getSensorValue, sensor.get('interval', None), "shell")
+            sensorInfo = copy.copy(sensor)
+            sensorInfo.pop('interval', None)
+            sensorInfo.pop('command', None)
+            addSwitchFunction(name, self.getSensorValue, sensor.get('interval', None), "shell", sensorInfo)
 
     def getSensorValue(self, name):
         sensor = self.sensors[name]
