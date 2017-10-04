@@ -4,14 +4,12 @@
 import logging
 
 from ArduinoController import ArduinoController
+from ControlManager import ControlCommandHandler, ControlManager
 from EventManager import EventManager, EventCommandHandler
 from SensorManager import SensorManager, SensorCommandHandler
+from ShellControlProvider import ShellControlProvider
 from ShellEventHandlerProvider import ShellEventHandlerProvider
 from ShellSensorProvider import ShellSensorProvider
-from ShellSliderProvider import ShellSliderProvider
-from ShellSwitchProvider import ShellSwitchProvider
-from SliderManager import SliderManager, SliderCommandHandler
-from SwitchManager import SwitchManager, SwitchCommandHandler
 from python_modules.command_utils import HTTPCommandHandler
 from python_modules.server_utils import DispatchedBackgroundHTTPServer
 from python_modules.threading_utils import MultiThreadingDispatcher
@@ -30,13 +28,9 @@ class SmartHome:
         self.httpHandler.setHandler('ping', self.pingHandler)
         self.httpHandler.setHandler('status', self.statusHandler)
 
-        self.switchManager = SwitchManager(config['SwitchManager'])
-        self.switchCommandHandler = SwitchCommandHandler(self.switchManager)
-        self.httpHandler.setHandler('switch', self.switchCommandHandler.handleCommand)
-
-        self.sliderManager = SliderManager(config['SliderManager'])
-        self.sliderCommandHandler = SliderCommandHandler(self.sliderManager)
-        self.httpHandler.setHandler('slider', self.sliderCommandHandler.handleCommand)
+        self.controlManager = ControlManager(config['ControlManager'])
+        self.controlCommandHandler = ControlCommandHandler(self.controlManager)
+        self.httpHandler.setHandler('control', self.controlCommandHandler.handleCommand)
 
         self.sensorManager = SensorManager(config['SensorManager'])
         self.sensorCommandHandler = SensorCommandHandler(self.sensorManager)
@@ -50,8 +44,7 @@ class SmartHome:
         self.arduinoController = ArduinoController(config['ArduinoController'])
 
         self.shellSensorProvider = ShellSensorProvider(config['ShellSensorProvider'])
-        self.shellSwitchProvider = ShellSwitchProvider(config['ShellSwitchProvider'])
-        self.shellSliderProvider = ShellSliderProvider(config['ShellSliderProvider'])
+        self.shellControlProvider = ShellControlProvider(config['ShellControlProvider'])
 
         self.eventManager = EventManager(config['EventManager'])
         self.eventCommandHandler = EventCommandHandler(self.eventManager)
@@ -66,17 +59,14 @@ class SmartHome:
 
         self.arduinoController.start()
         self.shellSensorProvider.start()
-        self.shellSwitchProvider.start()
-        self.shellSliderProvider.start()
+        self.shellControlProvider.start()
 
-        self.arduinoController.registerSwitches(self.switchManager.addSwitch)
+        self.arduinoController.registerControls(self.controlManager.addControl)
+        self.shellControlProvider.registerControls(self.controlManager.addControl)
 
-        self.shellSwitchProvider.registerSwitches(self.switchManager.addSwitch)
-        self.shellSliderProvider.registerSliders(self.sliderManager.addSlider)
         self.shellSensorProvider.registerSensors(self.sensorManager.addSensor)
 
-        self.switchManager.start()
-        self.sliderManager.start()
+        self.controlManager.start()
         self.sensorManager.start()
 
         self.shellEventHandlerProvider.registerEventHandlers(self.eventManager.addEventHandler)
@@ -92,21 +82,18 @@ class SmartHome:
 
         self.eventManager.stop()
 
-        self.switchManager.stop()
-        self.sliderManager.stop()
+        self.controlManager.stop()
         self.sensorManager.stop()
 
         self.arduinoController.stop()
         self.shellSensorProvider.stop()
-        self.shellSwitchProvider.stop()
-        self.shellSliderProvider.stop()
+        self.shellControlProvider.stop()
 
         self.logger.info("Stopped")
 
     def getStatus(self):
         status = { 'http_port': self.http_port,
-                   'SwitchManager': self.switchManager.getStatus(),
-                   'SliderManager': self.sliderManager.getStatus(),
+                   'ControlManager': self.controlManager.getStatus(),
                    'SensorManager': self.sensorManager.getStatus(),
                    'EventManager':  self.eventManager.getStatus(),
                    }

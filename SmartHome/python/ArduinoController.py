@@ -67,9 +67,9 @@ class ArduinoController:
         self.connector.requestAndCheck('pin', {'act': 'dwrite', 'value': realValue, 'pin': switch['pin']})
         switch['value'] = value
 
-    def registerSwitches(self, addSwitchFunction):
+    def registerControls(self, addControlFunction):
         for name, switch in self.switches.iteritems():
-            addSwitchFunction(name, self.getSwitchValue, self.setSwitchValue, "arduino")
+            addControlFunction(name, self.getSwitchValue, self.setSwitchValue, "switch")
 
     def showMessage(self, message):
         self.connector.requestAndCheck('display', {'act': 'message', 'text': message})

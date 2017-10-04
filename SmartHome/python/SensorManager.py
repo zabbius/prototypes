@@ -90,6 +90,7 @@ class SensorManager:
 
         for name, sensor in self.sensors.iteritems():
             sensorStatusItem = { 'value': sensor['value'],
+                                 'type': sensor['type'],
                                  'last_update': str(sensor['last_update'])}
 
             for k, v in sensor['info'].iteritems():

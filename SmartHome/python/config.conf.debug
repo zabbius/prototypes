@@ -62,59 +62,58 @@
                     "hostname":
                     {
                         "command": "hostname",
-                        "value_type": "string"
+                        "type": "string"
                     },
 
                     "ifconfig":
                     {
                         "command": "ifconfig eth0",
-                        "value_type": "text"
+                        "type": "text"
                     },
 
                     "cpu_temp":
                     {
                         "command": "sensors -u | grep 'temp1_input' | sed 's/temp1_input://' | sed 's/ *//g' | sed 's/\\.000//'",
-                        "value_type": "int"
+                        "type": "int"
                     },
 
                     "cpu_load":
                     {
                         "command": "./cpu_load.sh",
-                        "value_type": "progress",
+                        "type": "progress",
                         "min": "0",
                         "max": "100"
                     }
 
                 }
             },
-            "SwitchManager":
+            "ControlManager":
             {
             },
-            "ShellSwitchProvider":
+            "ShellControlProvider":
             {
-                "switches":
+                "controls":
                 {
                     "dummy_switch":
                     {
+                        "type": "switch",
                         "command": "cat > ./dummy_switch",
                         "invert": false,
                         "value": false
-                    }
-                }
-            },
-            "SliderManager":
-            {
-            },
-            "ShellSliderProvider":
-            {
-                "sliders":
-                {
+                    },
                     "dummy_slider":
                     {
+                        "type": "slider",
                         "command": "cat > ./dummy_slider",
                         "value": 50,
                         "min": 0,
                         "max": 100
+                    },
+                    "dummy_text":
+                    {
+                        "type": "text",
+                        "command": "cat > ./dummy_text",
+                        "value": "some dummy text"
                     }
                 }
             }
