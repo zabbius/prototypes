@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/babel-standalone" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/react" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/babel-standalone-6.26.0/babel.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/babel-standalone-6.26.0/babel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/react-16.0.0/react.development.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/react-16.0.0/react.production.min.js" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSliderProvider.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SliderManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SwitchManager.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ControlManager.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ShellControlProvider.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/index.html" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -347,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506956684299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="smarthome: controls refactoring">
+      <created>1507134079045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1507134079046</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +431,8 @@
     <MESSAGE value="smarthome: sliders and switches" />
     <MESSAGE value="smarthome: ShellEventHandlerProvider" />
     <MESSAGE value="smarthome: sensor types" />
-    <option name="LAST_COMMIT_MESSAGE" value="smarthome: sensor types" />
+    <MESSAGE value="smarthome: controls refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="smarthome: controls refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
