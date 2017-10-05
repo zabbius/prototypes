@@ -2,52 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/tinycamd" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/tinycamd" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/Tank/tinycamd" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/VideoController.py" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/.gitignore" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/.gitignore" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/COPYING" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/COPYING" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/Makefile" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/Makefile" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/README" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/README" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/controls.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/controls.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/README" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README.Debian" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/README.Debian" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/changelog" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/changelog" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/compat" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/compat" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/control" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/control" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/copyright" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/copyright" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/docs" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/docs" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/manpages" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/manpages" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/rules" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/rules" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/source/format" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/source/format" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.default" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/tinycamd.default" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.dirs" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/debian/tinycamd.dirs" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/device.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/device.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/frame.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/frame.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/httpd.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.h" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/httpd.h" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/logging.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.h" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/logging.h" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/openwrt/Makefile" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/openwrt/Makefile" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/options.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/options.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/probe.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/probe.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/jquery.min.js" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/resources/jquery.min.js" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/setup.html" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/resources/setup.html" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.css" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/resources/tinycamd.css" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.js" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/resources/tinycamd.js" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.1" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/tinycamd.1" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/tinycamd.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.h" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/tinycamd.h" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/util/bintoc.c" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/util/bintoc.c" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvc_compat.h" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/uvc_compat.h" />
-      <change type="MOVED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvcvideo.h" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/cpp/tinycamd/uvcvideo.h" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/dictionaries/zab.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/dictionaries/zab.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/misc.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/ArduinoController.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SmartHome.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/config.conf.debug" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/README" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/controls.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README.Debian" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/changelog" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/compat" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/control" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/copyright" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/docs" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/manpages" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/rules" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/source/format" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.default" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.dirs" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/device.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/frame.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.h" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.h" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/openwrt/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/options.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/probe.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.1" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.h" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/util/bintoc.c" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvc_compat.h" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvcvideo.h" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -417,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507134110254</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="smarthome: VideoController from Tank&#10;thirdpart: tinycamd">
+      <created>1507207741271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507207741271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,7 +506,8 @@
     <MESSAGE value="smarthome: ShellEventHandlerProvider" />
     <MESSAGE value="smarthome: sensor types" />
     <MESSAGE value="smarthome: controls refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="smarthome: controls refactoring" />
+    <MESSAGE value="smarthome: VideoController from Tank&#10;thirdpart: tinycamd" />
+    <option name="LAST_COMMIT_MESSAGE" value="smarthome: VideoController from Tank&#10;thirdpart: tinycamd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
