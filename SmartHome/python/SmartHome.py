@@ -10,6 +10,7 @@ from SensorManager import SensorManager, SensorCommandHandler
 from ShellControlProvider import ShellControlProvider
 from ShellEventHandlerProvider import ShellEventHandlerProvider
 from ShellSensorProvider import ShellSensorProvider
+from VideoController import VideoCommandHandler, VideoController
 from python_modules.command_utils import HTTPCommandHandler
 from python_modules.server_utils import DispatchedBackgroundHTTPServer
 from python_modules.threading_utils import MultiThreadingDispatcher
@@ -27,6 +28,10 @@ class SmartHome:
 
         self.httpHandler.setHandler('ping', self.pingHandler)
         self.httpHandler.setHandler('status', self.statusHandler)
+
+        self.videoController = VideoController(config['VideoController'])
+        self.videoCommandHandler = VideoCommandHandler(self.videoController)
+        self.httpHandler.setHandler('video', self.videoCommandHandler.handleCommand)
 
         self.controlManager = ControlManager(config['ControlManager'])
         self.controlCommandHandler = ControlCommandHandler(self.controlManager)
@@ -57,13 +62,13 @@ class SmartHome:
         self.httpDispatcher.start()
         self.httpServer.startServer()
 
+        self.videoController.start()
         self.arduinoController.start()
         self.shellSensorProvider.start()
         self.shellControlProvider.start()
 
         self.arduinoController.registerControls(self.controlManager.addControl)
         self.shellControlProvider.registerControls(self.controlManager.addControl)
-
         self.shellSensorProvider.registerSensors(self.sensorManager.addSensor)
 
         self.controlManager.start()
@@ -88,6 +93,7 @@ class SmartHome:
         self.arduinoController.stop()
         self.shellSensorProvider.stop()
         self.shellControlProvider.stop()
+        self.videoController.stop()
 
         self.logger.info("Stopped")
 

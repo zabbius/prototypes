@@ -116,6 +116,16 @@
                         "value": "some dummy text"
                     }
                 }
+            },
+           "VideoController":
+            {
+                "tinycamdPath": "./tinycamd",
+                "listenHost": "0.0.0.0",
+                "PortRange": { "first": 8090, "last": 8099 },
+                "Devices":
+                {
+                    "main": "/dev/video0"
+                }
             }
         }
     },

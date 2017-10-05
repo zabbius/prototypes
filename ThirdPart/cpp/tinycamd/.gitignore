@@ -1,0 +1,7 @@
+*.kdev4
+*.o
+*.d
+tinycamd
+util/bintoc
+html.c
+
