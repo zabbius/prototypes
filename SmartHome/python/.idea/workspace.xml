@@ -2,43 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc4dd08-13e3-4168-bf4d-a2cb62aed94d" name="Default" comment="">
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/COPYING" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/README" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/controls.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/README.Debian" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/changelog" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/compat" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/control" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/copyright" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/docs" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/manpages" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/rules" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/source/format" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.default" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/debian/tinycamd.dirs" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/device.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/frame.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/httpd.h" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/logging.h" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/openwrt/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/options.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/probe.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.css" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/resources/tinycamd.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.1" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/tinycamd.h" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/util/bintoc.c" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvc_compat.h" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/Tank/tinycamd/uvcvideo.h" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/public/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/package.json" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/public/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/public/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/public/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/src/App.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/src/App.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/src/index.css" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/react-16.0.0/react-dom.development.js" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Git/prototypes/ThirdPart/web/react-16.0.0/react-dom.production.min.js" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/jquery" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/jquery-mobile" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web_thirdpart" afterPath="" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/python/VideoController.py" afterPath="$USER_HOME$/Git/prototypes/SmartHome/python/VideoController.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" afterPath="$USER_HOME$/Git/prototypes/SmartHome/web/.idea/workspace.xml" />
     </list>
+    <ignored path="../../Git/prototypes/SmartHome/python/dummy_slider" />
+    <ignored path="../../Git/prototypes/SmartHome/python/dummy_switch" />
+    <ignored path="../../Git/prototypes/SmartHome/python/dummy_text" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,12 +42,52 @@
     <SUITE FILE_PATH="coverage/smarthome$main.coverage" NAME="main Coverage Results" MODIFIED="1507203109649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ControlManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ControlManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+            <state relative-caret-position="108">
+              <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_modules/server_utils/servers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-207">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="udp_client_connector.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_modules/command_utils/udp_client_connector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket_command_handler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_modules/command_utils/socket_command_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dummy_switch" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/dummy_switch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,8 +96,8 @@
       <file leaf-file-name="ShellControlProvider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ShellControlProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-957">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="15">
+              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -73,25 +105,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmartHome.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartHome.py">
+      <file leaf-file-name="VideoController.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VideoController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+            <state relative-caret-position="423">
+              <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
               <folding>
-                <element signature="e#44#58#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoController.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VideoController.py">
+      <file leaf-file-name="SensorManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SensorManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="153">
+              <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http_command_handler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_modules/command_utils/http_command_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArduinoController.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ArduinoController.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="708">
+              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,6 +178,7 @@
       <find>controles</find>
       <find>control</find>
       <find>Switch</find>
+      <find>not info</find>
     </findStrings>
     <replaceStrings>
       <replace>self.executeQuery</replace>
@@ -163,7 +218,6 @@
         <option value="$PROJECT_DIR$/ShellEventHandlerProvider.py" />
         <option value="$USER_HOME$/Git/prototypes/SmartHome/python/SensorManager.py" />
         <option value="$PROJECT_DIR$/ShellSensorProvider.py" />
-        <option value="$PROJECT_DIR$/SensorManager.py" />
         <option value="$PROJECT_DIR$/SwitchManager.py" />
         <option value="$PROJECT_DIR$/ShellSwitchProvider.py" />
         <option value="$USER_HOME$/Git/prototypes/SmartHome/python/ShellControlProvider.py" />
@@ -173,6 +227,7 @@
         <option value="$PROJECT_DIR$/config.conf" />
         <option value="$PROJECT_DIR$/SmartHome.py" />
         <option value="$PROJECT_DIR$/VideoController.py" />
+        <option value="$PROJECT_DIR$/SensorManager.py" />
       </list>
     </option>
   </component>
@@ -238,7 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -247,10 +301,28 @@
               <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
               <item name="smarthome" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
+              <item name="python_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
+              <item name="python_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="command_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
+              <item name="python_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="server_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,22 +486,28 @@
       <option name="project" value="LOCAL" />
       <updated>1507207741271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="smarthome: VideoController from Tank&#10;thirdpart: tinycamd">
+      <created>1507207843384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1507207843384</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="380" y="261" width="1688" height="1024" extended-state="6" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18864469" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3382857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33714285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18681319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3382857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33714285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39885715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,6 +516,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -516,34 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.conf.debug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="92" lean-forward="false" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartHome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ArduinoController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.conf.debug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmartHome.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -708,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,20 +776,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellSwitchProvider.py" />
     <entry file="file://$PROJECT_DIR$/ShellEventHandlerProvider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,62 +795,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SliderManager.py" />
+    <entry file="file://$PROJECT_DIR$/EventManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShellSliderProvider.py" />
+    <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellControlProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="158" column="9" lean-forward="false" selection-start-line="158" selection-start-column="9" selection-end-line="158" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartHome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShellControlProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SliderManager.py">
+    <entry file="file://$PROJECT_DIR$/ArduinoController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="708">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_modules/command_utils/command_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SensorManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <marker date="1506618630793" expanded="true" signature="1311:1337" ph="UPDATE event... " />
-            <marker date="1506618630793" expanded="true" signature="2011:2037" ph="UPDATE event... " />
-            <marker date="1506618630793" expanded="true" signature="2110:2159" ph="UPDATE event... " />
-            <marker date="1506618630793" expanded="true" signature="2330:2375" ph="SELECT * FRO... event" />
-            <marker date="1506618630793" expanded="true" signature="2644:2695" ph="SELECT * FRO... event" />
-            <marker date="1506618630793" expanded="true" signature="3062:3094" ph="DELETE FROM " />
-            <marker date="1506618630793" expanded="true" signature="3296:3368" ph="INSERT INTO event... " />
-            <marker date="1506618630793" expanded="true" signature="3940:3976" ph="SELECT * FRO... event" />
-            <marker date="1506618630793" expanded="true" signature="4058:4085" ph="SELECT * FRO... event" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShellSliderProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/ShellControlProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,65 +887,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_modules/command_utils/command_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShellControlProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ControlManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+        <state relative-caret-position="108">
+          <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ArduinoController.py">
+    <entry file="file://$PROJECT_DIR$/python_modules/server_utils/servers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        <state relative-caret-position="-207">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.conf">
+    <entry file="file://$PROJECT_DIR$/python_modules/command_utils/udp_client_connector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="158" column="9" lean-forward="false" selection-start-line="158" selection-start-column="9" selection-end-line="158" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartHome.py">
+    <entry file="file://$PROJECT_DIR$/python_modules/command_utils/socket_command_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
-          <folding>
-            <element signature="e#44#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoController.py">
+    <entry file="file://$USER_HOME$/Git/prototypes/SmartHome/python/dummy_switch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

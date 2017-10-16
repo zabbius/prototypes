@@ -24,7 +24,7 @@ class SensorManager:
         if interval is not None:
             interval = datetime.timedelta(seconds=interval)
 
-        if not info:
+        if info is None:
             info = {}
 
         sensor = { 'get': getFunction, 'interval': interval, 'value': None,

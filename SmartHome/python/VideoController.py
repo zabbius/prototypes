@@ -123,7 +123,7 @@ class VideoController:
 
     def stopAllCaptures(self):
         self.logger.info("Stopping all captures")
-        for name in self.captures.keys():
+        for name in self.captures.iterkeys():
             self.stopCapture(name)
 
     def getStatus(self):
